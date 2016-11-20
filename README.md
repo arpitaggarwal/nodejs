@@ -16,3 +16,29 @@ npm install multer --save
 ```
 http://localhost:8081/images/node.png
 ```
+
+### Rest Calls
+
+1. GET
+
+```
+http://0.0.0.0:8081/listUsers
+```
+
+2. POST
+
+```
+http://0.0.0.0:8081/addUser
+```
+
+3. GET for ID
+
+```
+http://0.0.0.0:8081/2
+```
+
+3. DELETE
+
+```
+http://0.0.0.0:8081/deleteUser
+```
