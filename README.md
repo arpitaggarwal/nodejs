@@ -42,3 +42,13 @@ http://0.0.0.0:8081/2
 ```
 http://0.0.0.0:8081/deleteUser
 ```
+
+### NodeMon
+
+```
+npm install nodemon --save-dev
+```
+
+Reference:
+
+1. http://nodemon.io/
