@@ -49,6 +49,15 @@ http://0.0.0.0:8081/deleteUser
 npm install nodemon --save-dev
 ```
 
+From app folder
+
+```
+./node_modules/.bin/nodemon server.js
+```
+
+
 Reference:
 
 1. http://nodemon.io/
+
+2. https://zellwk.com/blog/crud-express-mongodb/
