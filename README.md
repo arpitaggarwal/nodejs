@@ -9,6 +9,8 @@ npm install cookie-parser --save
 
 npm install multer --save
 
+npm install ejs --save
+
 ```
 
 ### Express Serve Static Files
@@ -55,6 +57,18 @@ From app folder
 ./node_modules/.bin/nodemon server.js
 ```
 
+### Mongo
+
+```
+npm install mongodb --save
+
+```
+
+### Form Submission
+
+```
+http://localhost:3000/form
+```
 
 Reference:
 
