@@ -21,25 +21,25 @@ http://localhost:8081/images/node.png
 
 ### Rest Calls
 
-1. GET
+ 1. GET
 
 ```
 http://0.0.0.0:8081/listUsers
 ```
 
-2. POST
+ 2. POST
 
 ```
 http://0.0.0.0:8081/addUser
 ```
 
-3. GET for ID
+ 3. GET for ID
 
 ```
 http://0.0.0.0:8081/2
 ```
 
-3. DELETE
+ 4. DELETE
 
 ```
 http://0.0.0.0:8081/deleteUser
@@ -57,6 +57,7 @@ From app folder
 ./node_modules/.bin/nodemon server.js
 ```
 
+
 ### Mongo
 
 ```
@@ -69,6 +70,10 @@ npm install mongodb --save
 ```
 http://localhost:3000/form
 ```
+
+
+![MLab](https://cloud.githubusercontent.com/assets/5689961/20625738/ac3f00d6-b32e-11e6-8266-ac221fe76fa0.png)
+
 
 Reference:
 
