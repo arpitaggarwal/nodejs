@@ -75,6 +75,12 @@ http://localhost:3000/form
 ![MLab](https://cloud.githubusercontent.com/assets/5689961/20625738/ac3f00d6-b32e-11e6-8266-ac221fe76fa0.png)
 
 
+### Node Inspector
+
+```
+http://www.mattzeunert.com/2016/06/01/node-v8-inspector-inspect.html
+```
+
 Reference:
 
 1. http://nodemon.io/
