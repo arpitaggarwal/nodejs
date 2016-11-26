@@ -10,7 +10,10 @@ app.set('view engine', 'ejs')
 
 // Express allows us to add middlewares like body-parser to our application with the use method.
 app.use(bodyParser.urlencoded({extended: true}))
+// parse application/json
+app.use(bodyParser.json())
 
+app.use(express.static('public'))
 
 //app.get('/', (req, res) => {
   //var cursor = db.collection('quotes').find()
@@ -38,7 +41,7 @@ app.get('/form', (req, res) => {
   //__dirname is directory that contains the JavaScript source code. Try logging it and see what you get!
 })
 
-MongoClient.connect('mongodb://arpit:arpit@ds047752.mlab.com:47752/my-database', (err, database) => {
+MongoClient.connect('mongodb://arpit:xxxx@ds047752.mlab.com:47752/my-database', (err, database) => {
 
   if (err) return console.log(err)
   db = database
@@ -48,7 +51,21 @@ MongoClient.connect('mongodb://arpit:arpit@ds047752.mlab.com:47752/my-database',
   })
 })
 
-
+app.put('/quotes', (req, res) => {
+  db.collection('quotes')
+  .findOneAndUpdate({name: 'Arpit'}, {
+    $set: {
+      name: req.body.name,
+      quote: req.body.quote
+    }
+  }, {
+    sort: {_id: -1},
+    upsert: true
+  }, (err, result) => {
+    if (err) return res.send(err)
+    res.send(result)
+  })
+})
 
 app.post('/quotes', (req, res) => {
   db.collection('quotes').save(req.body, (err, result) => {
